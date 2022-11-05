@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website for open community</title>
+    <link rel="stylesheet" href="anmol.css "> 
+    <script src="https://kit.fontawesome.com/9977ca5270.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="IMG_20221022_125641.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Open Collabration Member</p>
+            <h1>Hi, I'm <span>Anmol ganorkar</span><br> from UPES</h1>
+        </div>
+    </div>
+ </div>
+
+
+
+ <div id="about">
+     <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+                 <img src="Remini20220127005446409-removebg-preview.jpg">
+             </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello myself ANMOL GANORKAR.I'm currently pursuing B.tech CSE from upes.<br>
+                    My hometown is bhilai ,CG.<br>
+                    Some of my hobbies are football,playing guitar and gaming
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li> 
+                        <li><span>Web devlopmemt</span></li> 
+                        <li><span>C language</span></li> 
+                        <li><span>MS Excel</span></li> 
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>(2014-2016)</span><br>At B.S.P E.M.M.S SECTOR-IX</li>
+                        <li><span>(2017-2021)</span><br>At B.S.P S.S.S Sector-X</li>
+                        <li><span>(2022-current)</span><br>B.Tech CSE From UPES</li>
+                    </ul>
+                </div>
+             </div>
+         </div>
+    </div>
+</div>
+
+<div id="contact">
+     <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> anmolganorkar@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9981090799</p>
+                <div class="social-icons">
+                    <a href="https://m.facebook.com/?paipv=0&eav= AfbOdvH7KgnoBNO_nzmQH _pUprCgda3S8eVvNHMvfMmdulWWaKqHn ffJRQSPJbEiHko&_rdr&tbua=1"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/AnmolGanorkar?t=oY id3PeB8Pe90vOW5GZ3Q&s=09"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/_.anmol_ganorkar. ?igshid=ZDdkNTZINTM="><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.linkedin.com/in/anmol-ganorkar -746172249"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required> 
+                    <input type="email" name="email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message "></textarea> 
+                    <button type="submit" class="btn btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+    
+        } 
+        for (tabcontent of tabcontents){ 
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+</body>
+</html>
+
